@@ -30,12 +30,14 @@ margin:auto;
 h2{
 color:#4fd1c5;
 }
-
 .card{
-background:#2a2a40;
-padding:20px;
-border-radius:10px;
-margin-bottom:20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
 }
 /* 👇 ADD HERE */
 .buttons {
@@ -47,15 +49,18 @@ margin-bottom:20px;
 
 .btn {
   display: block;
-  background: #4fd1c5;
+  background: linear-gradient(135deg, #4fd1c5, #38b2ac);
   color: black;
-  padding: 12px;
+  padding: 14px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(79, 209, 197, 0.5);
 }
+
 
 .btn:hover {
   background: #38b2ac;
@@ -89,6 +94,15 @@ Luxury Private Tours • Airport Transfers • VIP Transport Across Antigua
 
 <div class="card">
 <h2>Our Services</h2>
+  <div class="card">
+  <h2>Our Fleet</h2>
+
+  <img src="IMG_20260318_070753.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+  <img src="IMG_20260318_070753.jpg" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+  <img src="IMG_20260318_070753.jpg" style="width:100%; border-radius:10px;">
+  </div>
 <ul>
   <li>Premium Island Tours</li>
   <li>Airport & Hotel Transfers</li>
@@ -102,11 +116,6 @@ Luxury Private Tours • Airport Transfers • VIP Transport Across Antigua
 <h2>Contact</h2>
 <p>
 
-  <div class="buttons">
-  <a href="tel:+12687754646" class="btn">📞 Call Now</a>
-  <a href="https://wa.me/12687754646" class="btn">💬 WhatsApp</a>
-  <a href="https://instagram.com/maestrosjaunt" class="btn">📸 Instagram</a>
-  </div>
 </div>
 
 <p>Email: godschldjjj@gmail.com</p>
