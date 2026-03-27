@@ -211,14 +211,23 @@ color:#4fd1c5;
 <div class="container">
   <h2 style="text-align:center; margin-bottom:20px;">Gallery</h2>
 
-  <div class="gallery">
-    <img src="hero.jpg">
-    <img src="ocean-side.jpg">
-    <img src="rear-ocean.jpg">
-    <img src="interior.jpg">
-    <img src="drinks.jpg">
-    <img src="trunk.jpg">
+  <div class="container">
+
+  <h2 onclick="toggleGallery()" style="text-align:center; margin-bottom:20px; cursor:pointer;">
+    📸 Tap to View Gallery
+  </h2>
+
+  <div id="gallerySection" style="display:none;">
+    <div class="gallery">
+      <img src="hero.jpg">
+      <img src="ocean-side.jpg">
+      <img src="rear-ocean.jpg">
+      <img src="interior.jpg">
+      <img src="drinks.jpg">
+      <img src="trunk.jpg">
+    </div>
   </div>
+
 </div>
 <div class="card">
   <h2>Contact</h2>
@@ -292,5 +301,15 @@ Reliable and friendly. Made our trip stress-free!<br>
 
 
 <a href="https://wa.me/12687754646" class="whatsapp-float">💬</a>
+<script>
+function toggleGallery() {
+  var x = document.getElementById("gallerySection");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>
