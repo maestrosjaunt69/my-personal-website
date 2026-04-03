@@ -66,6 +66,20 @@ color:#4fd1c5;
   font-weight: bold;
   animation: pulse 1.8s infinite;
 }
+ @keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37,211,102, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 15px rgba(37,211,102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37,211,102, 0);
+  }
+ }
 }
 
 .whatsapp-float:hover {
